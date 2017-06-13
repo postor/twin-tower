@@ -1,0 +1,26 @@
+{
+    "slave": true,
+    "mainUrl": "http://localhost:8081/twintower",
+    "mainIp": "127.0.0.1",
+    "myUrl": "http://localhost:8083/twintower",
+    "port": 8083,
+    "maxFail": 5,
+    "interval": 5000,
+    "smtpConfig": {
+        "pool": true,
+        "host": "smtp.exmail.qq.com",
+        "port": 465,
+        "secure": true, 
+        "auth": {
+            "user": "user@domain.com",
+            "pass": "pass"
+        }
+    },
+    "jobs":{
+        "test":{
+            "cmd":"date /T",
+            "frequency": 60000
+        }
+    },
+    "mailto":"user@domain.com"
+}

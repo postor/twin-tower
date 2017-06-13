@@ -1,0 +1,33 @@
+{
+  "name": "twin-tower",
+  "version": "1.0.0",
+  "description": "这是一个服务器存活检测及告警系统，至少需要两台主机来保持相互告警，所以称之为双生塔。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "main": "forever main.js",
+    "slave": "forever slave.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@code:it/twin-tower.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "nodemailer": "^4.0.1",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-env": "^1.3.2",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "babel-register": "^6.24.1",
+    "forever": "^0.15.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
